@@ -19,7 +19,15 @@ namespace Cinema_Complex
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+        }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            Reception reception = new Reception();
+            this.Hide();
+            reception.Show();
         }
     }
 }
