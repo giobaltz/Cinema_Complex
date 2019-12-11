@@ -12,7 +12,6 @@ namespace Cinema_Complex
 {
     public partial class Form1 : Form
     {
-        int test;
         public Form1()
         {
             InitializeComponent();

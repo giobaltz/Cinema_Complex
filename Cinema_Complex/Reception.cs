@@ -12,7 +12,6 @@ namespace Cinema_Complex
 {
     public partial class Reception : Form
     {
-        string a;
         public Reception()
         {
             InitializeComponent();
