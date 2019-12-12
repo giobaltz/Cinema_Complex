@@ -110,5 +110,11 @@
   <ItemGroup>
     <None Include="Resources\thought_bubble.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
