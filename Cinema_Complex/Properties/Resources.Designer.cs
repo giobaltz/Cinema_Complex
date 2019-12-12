@@ -93,9 +93,39 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap receptionist_transparent {
+            get {
+                object obj = ResourceManager.GetObject("receptionist_transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap receptionist2_transparent {
+            get {
+                object obj = ResourceManager.GetObject("receptionist2_transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reseption2 {
             get {
                 object obj = ResourceManager.GetObject("reseption2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thought_bubble {
+            get {
+                object obj = ResourceManager.GetObject("thought_bubble", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

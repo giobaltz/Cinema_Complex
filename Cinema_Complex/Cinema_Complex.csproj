@@ -101,5 +101,14 @@
   <ItemGroup>
     <None Include="Resources\clock.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist2_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thought_bubble.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
