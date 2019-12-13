@@ -63,6 +63,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_info {
+            get {
+                object obj = ResourceManager.GetObject("book_info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cgi_bar {
             get {
                 object obj = ResourceManager.GetObject("cgi_bar", resourceCulture);
@@ -106,6 +116,16 @@ namespace Cinema_Complex.Properties {
         internal static System.Drawing.Bitmap cloud2 {
             get {
                 object obj = ResourceManager.GetObject("cloud2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_info {
+            get {
+                object obj = ResourceManager.GetObject("movie_info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
