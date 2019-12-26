@@ -169,5 +169,43 @@ namespace Cinema_Complex.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volume_sound_audio_off {
+            get {
+                object obj = ResourceManager.GetObject("volume_sound_audio_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volume_sound_audio_on {
+            get {
+                object obj = ResourceManager.GetObject("volume_sound_audio_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Πληροφορίες_κρατήσεων {
+            get {
+                return ResourceManager.GetStream("Πληροφορίες_κρατήσεων", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Πληροφορίες_ταινιών {
+            get {
+                return ResourceManager.GetStream("Πληροφορίες_ταινιών", resourceCulture);
+            }
+        }
     }
 }

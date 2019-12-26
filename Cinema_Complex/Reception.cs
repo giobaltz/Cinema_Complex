@@ -4,14 +4,17 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace Cinema_Complex
 {
     public partial class Reception : Form
     {
+        bool sound =false;
         public Reception()
         {
             InitializeComponent();
@@ -38,6 +41,7 @@ namespace Cinema_Complex
 
         private void Reception_Load(object sender, EventArgs e)
         {
+
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
         }
@@ -45,7 +49,12 @@ namespace Cinema_Complex
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
             pictureBox8.Visible = true;
-            
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Πληροφορίες_κρατήσεων;
+                player.Play();
+            }
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
@@ -56,11 +65,31 @@ namespace Cinema_Complex
         private void pictureBox3_MouseEnter(object sender, EventArgs e)
         {
             pictureBox9.Visible = true;
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Πληροφορίες_ταινιών;
+                player.Play();
+            }
         }
 
         private void pictureBox3_MouseLeave(object sender, EventArgs e)
         {
             pictureBox9.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button1.BackgroundImage=Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else 
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
         }
     }
 }
