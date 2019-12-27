@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -238,6 +239,34 @@ namespace Cinema_Complex
                     return Properties.Resources.movie4sound;
                 default:
                     return Properties.Resources.movie5sound;
+            }
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
+            {
+                Office office = new Office();
+                this.Close();
+                office.Show();
+            }
+            else
+            {
+                MessageBox.Show("Πληκτρολογήσατε λάθος κωδικό");
+            }
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
+            {
+                Office office = new Office();
+                this.Close();
+                office.Show();
+            }
+            else
+            {
+                MessageBox.Show("Πληκτρολογήσατε λάθος κωδικό");
             }
         }
     }

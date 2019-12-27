@@ -117,6 +117,7 @@
     <Reference Include="IKVM.Runtime.JNI, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
       <HintPath>..\packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.JNI.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -133,11 +134,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application_Management.Designer.cs">
+      <DependentUpon>Application_Management.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Office.Designer.cs">
+      <DependentUpon>Office.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,8 +165,14 @@
     <Compile Include="Reception.Designer.cs">
       <DependentUpon>Reception.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Application_Management.resx">
+      <DependentUpon>Application_Management.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Office.resx">
+      <DependentUpon>Office.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -288,6 +307,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Μόνο_προσωπικό.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wc_cgi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

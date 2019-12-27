@@ -123,6 +123,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap data {
+            get {
+                object obj = ResourceManager.GetObject("data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap movie_info {
             get {
                 object obj = ResourceManager.GetObject("movie_info", resourceCulture);
@@ -228,6 +238,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap office {
+            get {
+                object obj = ResourceManager.GetObject("office", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap receptionist_transparent {
             get {
                 object obj = ResourceManager.GetObject("receptionist_transparent", resourceCulture);
@@ -281,6 +301,16 @@ namespace Cinema_Complex.Properties {
         internal static System.Drawing.Bitmap volume_sound_audio_on {
             get {
                 object obj = ResourceManager.GetObject("volume_sound_audio_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wc_cgi {
+            get {
+                object obj = ResourceManager.GetObject("wc_cgi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
