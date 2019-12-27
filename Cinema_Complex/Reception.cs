@@ -45,6 +45,7 @@ namespace Cinema_Complex
 
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
+            label1.Text = "Μόνο \n" + "Εργαζόμενοι";
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
