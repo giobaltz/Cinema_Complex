@@ -247,5 +247,14 @@
   <ItemGroup>
     <None Include="Resources\Πληροφορίες-ταινιών.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Πληροφορίες_ταινιών.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Είσοδος.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Μόνο_εργαζόμενοι.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

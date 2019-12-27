@@ -193,6 +193,24 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Είσοδος {
+            get {
+                return ResourceManager.GetStream("Είσοδος", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Μόνο_εργαζόμενοι {
+            get {
+                return ResourceManager.GetStream("Μόνο_εργαζόμενοι", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Πληροφορίες_κρατήσεων {
             get {
                 return ResourceManager.GetStream("Πληροφορίες_κρατήσεων", resourceCulture);

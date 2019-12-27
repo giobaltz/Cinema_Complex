@@ -15,6 +15,7 @@ namespace Cinema_Complex
     public partial class Reception : Form
     {
         bool sound =false;
+        bool sound_door =true;
         public Reception()
         {
             InitializeComponent();
@@ -90,6 +91,60 @@ namespace Cinema_Complex
                 button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
                 sound = true;
             }
+        }
+
+        private void pictureBox4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound && sound_door)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Είσοδος;
+                player.Play();
+                timer1.Start();
+                sound_door = false;
+            }
+        }
+
+        private void pictureBox5_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound && sound_door)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Μόνο_εργαζόμενοι;
+                player.Play();
+                timer1.Start();
+                sound_door = false;
+            }
+        }
+
+        private void pictureBox6_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound && sound_door)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Είσοδος;
+                player.Play();
+                timer1.Start();
+                sound_door = false;
+            }
+        }
+
+        private void pictureBox7_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound && sound_door)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Μόνο_εργαζόμενοι;
+                player.Play();
+                timer1.Start();
+                sound_door = false;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            sound_door = true;
         }
     }
 }
