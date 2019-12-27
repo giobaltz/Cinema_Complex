@@ -136,6 +136,36 @@
   <data name="cloud2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cloud2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="movie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movie1sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="movie2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movie2sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="movie3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movie3sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="movie4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movie4sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="movie5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="movie5sound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\movie5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="movie_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movie_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +190,8 @@
   <data name="Είσοδος" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Είσοδος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Μόνο_εργαζόμενοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Μόνο_εργαζόμενοι.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Μόνο_προσωπικό" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Μόνο_προσωπικό.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Πληροφορίες_κρατήσεων" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Πληροφορίες-κρατήσεων.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

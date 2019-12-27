@@ -256,5 +256,38 @@
   <ItemGroup>
     <None Include="Resources\Μόνο_εργαζόμενοι.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\movie5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Μόνο_προσωπικό.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

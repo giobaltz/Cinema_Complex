@@ -16,6 +16,7 @@ namespace Cinema_Complex
     {
         bool sound =false;
         bool sound_door =true;
+        int i = 1;
         public Reception()
         {
             InitializeComponent();
@@ -42,10 +43,12 @@ namespace Cinema_Complex
 
         private void Reception_Load(object sender, EventArgs e)
         {
-
+            pictureBox10.Image = Properties.Resources.movie1;
+            pictureBox11.Image = Properties.Resources.movie2;
+            pictureBox12.Image = Properties.Resources.movie3;
             pictureBox8.Visible = false;
             pictureBox9.Visible = false;
-            label1.Text = "Μόνο \n" + "Εργαζόμενοι";
+            label1.Text = "Μόνο \n" + "Προσωπικό";
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
@@ -111,7 +114,7 @@ namespace Cinema_Complex
             if (sound && sound_door)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Μόνο_εργαζόμενοι;
+                player.Stream = Properties.Resources.Μόνο_προσωπικό;
                 player.Play();
                 timer1.Start();
                 sound_door = false;
@@ -135,7 +138,7 @@ namespace Cinema_Complex
             if (sound && sound_door)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Μόνο_εργαζόμενοι;
+                player.Stream = Properties.Resources.Μόνο_προσωπικό;
                 player.Play();
                 timer1.Start();
                 sound_door = false;
@@ -146,6 +149,96 @@ namespace Cinema_Complex
         {
             timer1.Stop();
             sound_door = true;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            switch (i)
+            {
+                case 1:
+                    pictureBox10.Image = Properties.Resources.movie2;
+                    pictureBox11.Image = Properties.Resources.movie3;
+                    pictureBox12.Image = Properties.Resources.movie4;
+                    break;
+
+                case 2:
+                    pictureBox10.Image = Properties.Resources.movie3;
+                    pictureBox11.Image = Properties.Resources.movie4;
+                    pictureBox12.Image = Properties.Resources.movie5;
+                    break;
+                case 3:
+                    pictureBox10.Image = Properties.Resources.movie4;
+                    pictureBox11.Image = Properties.Resources.movie5;
+                    pictureBox12.Image = Properties.Resources.movie1;
+                    break;
+                case 4:
+                    pictureBox10.Image = Properties.Resources.movie5;
+                    pictureBox11.Image = Properties.Resources.movie1;
+                    pictureBox12.Image = Properties.Resources.movie2;
+                    break;
+                default:
+                    pictureBox10.Image = Properties.Resources.movie1;
+                    pictureBox11.Image = Properties.Resources.movie2;
+                    pictureBox12.Image = Properties.Resources.movie3;
+                    i = 0;
+                    break;
+            }
+            i++;
+
+        }
+
+        private void pictureBox10_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream= moviesound(0);
+                player.Play();
+            }
+        }
+
+        private void pictureBox11_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = moviesound(1);
+                player.Play();
+            }
+        }
+
+        private void pictureBox12_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = moviesound(2);
+                player.Play();
+            }
+        }
+
+        private System.IO.UnmanagedMemoryStream moviesound(int z) {
+            int y = i + z;
+            if (y == 6)
+            {
+                y = 1;
+            }
+            else if (y == 7) 
+            {
+                y = 2;
+            }
+            switch (y) {            
+                case 1:
+                    return Properties.Resources.movie1sound;
+                case 2:
+                    return Properties.Resources.movie2sound;
+                case 3:
+                    return Properties.Resources.movie3sound;
+                case 4:
+                    return Properties.Resources.movie4sound;
+                default:
+                    return Properties.Resources.movie5sound;
+            }
         }
     }
 }
