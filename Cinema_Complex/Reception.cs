@@ -15,13 +15,13 @@ namespace Cinema_Complex
 {
     public partial class Reception : Form
     {
-        bool sound =false;
+        bool sound;
         bool sound_door =true;
         int i = 1;
-        public Reception()
+        public Reception(bool sound)
         {
             InitializeComponent();
-
+            this.sound = sound;
             pictureBox2.Parent = pictureBox1;
             pictureBox3.Parent = pictureBox1;
             pictureBox4.Parent = pictureBox1;
@@ -246,7 +246,7 @@ namespace Cinema_Complex
         {
             if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
             {
-                Office office = new Office();
+                Office office = new Office(sound);
                 this.Close();
                 office.Show();
             }
@@ -260,7 +260,7 @@ namespace Cinema_Complex
         {
             if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
             {
-                Office office = new Office();
+                Office office = new Office(sound);
                 this.Close();
                 office.Show();
             }
@@ -268,6 +268,11 @@ namespace Cinema_Complex
             {
                 MessageBox.Show("Πληκτρολογήσατε λάθος κωδικό");
             }
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -317,5 +317,29 @@
   <ItemGroup>
     <None Include="Resources\data.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Επιστροφή_στη_ρεσεψιόν.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Application_management.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\κρατήσεις.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ταινίες.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\φωτισμός.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\έλεγχος_εισιτηρίων.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\σκούπισμα.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\εκτέλεση_παραγγελιών.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

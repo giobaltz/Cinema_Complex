@@ -34,85 +34,131 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.infobutton = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Location = new System.Drawing.Point(67, 11);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(308, 124);
+            this.button1.Size = new System.Drawing.Size(231, 101);
             this.button1.TabIndex = 0;
             this.button1.TabStop = false;
             this.button1.Text = "Κρατήσεις";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(326, 12);
+            this.button2.Location = new System.Drawing.Point(302, 11);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(308, 124);
+            this.button2.Size = new System.Drawing.Size(231, 101);
             this.button2.TabIndex = 1;
             this.button2.TabStop = false;
             this.button2.Text = "Ταινίες";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(12, 142);
+            this.button3.Location = new System.Drawing.Point(67, 116);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(308, 124);
+            this.button3.Size = new System.Drawing.Size(231, 101);
             this.button3.TabIndex = 2;
             this.button3.TabStop = false;
             this.button3.Text = "Σκούπισμα";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(326, 142);
+            this.button4.Location = new System.Drawing.Point(302, 116);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(308, 124);
+            this.button4.Size = new System.Drawing.Size(231, 101);
             this.button4.TabIndex = 3;
             this.button4.TabStop = false;
             this.button4.Text = "Φωτισμός";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(12, 272);
+            this.button5.Location = new System.Drawing.Point(67, 222);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(308, 124);
+            this.button5.Size = new System.Drawing.Size(231, 101);
             this.button5.TabIndex = 4;
             this.button5.TabStop = false;
             this.button5.Text = "Εκτέλεση\r\nΠαραγγελιών";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.Location = new System.Drawing.Point(326, 272);
+            this.button6.Location = new System.Drawing.Point(302, 222);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(308, 124);
+            this.button6.Size = new System.Drawing.Size(231, 101);
             this.button6.TabIndex = 5;
             this.button6.TabStop = false;
             this.button6.Text = "Έλεγχος\r\nΕισιτηρίων";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.MouseEnter += new System.EventHandler(this.button6_MouseEnter);
+            // 
+            // infobutton
+            // 
+            this.infobutton.BackColor = System.Drawing.Color.Transparent;
+            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.infobutton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.ForeColor = System.Drawing.Color.Black;
+            this.infobutton.Location = new System.Drawing.Point(12, 12);
+            this.infobutton.Name = "infobutton";
+            this.infobutton.Size = new System.Drawing.Size(22, 23);
+            this.infobutton.TabIndex = 16;
+            this.infobutton.Text = "i";
+            this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(40, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(22, 23);
+            this.button7.TabIndex = 17;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Application_Management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 409);
+            this.ClientSize = new System.Drawing.Size(541, 332);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.infobutton);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -120,6 +166,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Application_Management";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Application_Management";
@@ -136,5 +183,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button infobutton;
     }
 }

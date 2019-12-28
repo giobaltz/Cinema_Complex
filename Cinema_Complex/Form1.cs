@@ -25,7 +25,7 @@ namespace Cinema_Complex
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
-            Reception reception = new Reception();
+            Reception reception = new Reception(false);
             this.Hide();
             reception.Show();
         }

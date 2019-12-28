@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Application_management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Application_management.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="book_info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\book_info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -196,8 +199,20 @@
   <data name="wc_cgi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wc_cgi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="έλεγχος_εισιτηρίων" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\έλεγχος_εισιτηρίων.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Είσοδος" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Είσοδος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="εκτέλεση_παραγγελιών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\εκτέλεση_παραγγελιών.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Επιστροφή_στη_ρεσεψιόν" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Επιστροφή_στη_ρεσεψιόν.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="κρατήσεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\κρατήσεις.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Μόνο_προσωπικό" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Μόνο_προσωπικό.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -207,5 +222,14 @@
   </data>
   <data name="Πληροφορίες_ταινιών" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Πληροφορίες_ταινιών.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="σκούπισμα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\σκούπισμα.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ταινίες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ταινίες.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="φωτισμός" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\φωτισμός.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -12,19 +12,108 @@ namespace Cinema_Complex
 {
     public partial class Application_Management : Form
     {
-        public Application_Management()
+        bool sound;
+        public Application_Management(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
         private void Application_Management_Load(object sender, EventArgs e)
         {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
             button1.BackColor = Color.FromArgb(62,151,155);
             button2.BackColor = Color.FromArgb(109,180,100);
             button3.BackColor = Color.FromArgb(243,193,78);
             button4.BackColor = Color.FromArgb(247,128,85);
             button5.BackColor = Color.FromArgb(201,118,148);
             button6.BackColor = Color.FromArgb(62,151,155);
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.κρατήσεις;
+                player.Play();
+            }
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.ταινίες;
+                player.Play();
+            }
+        }
+
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.σκούπισμα;
+                player.Play();
+            }
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.φωτισμός;
+                player.Play();
+            }
+        }
+
+        private void button5_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.εκτέλεση_παραγγελιών;
+                player.Play();
+            }
+        }
+
+        private void button6_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.έλεγχος_εισιτηρίων;
+                player.Play();
+            }
         }
     }
 }
