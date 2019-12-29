@@ -146,6 +146,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hall.Designer.cs">
+      <DependentUpon>Hall.cs</DependentUpon>
+    </Compile>
     <Compile Include="Office.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hall.resx">
+      <DependentUpon>Hall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Office.resx">
       <DependentUpon>Office.cs</DependentUpon>
@@ -340,6 +349,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\εκτέλεση_παραγγελιών.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

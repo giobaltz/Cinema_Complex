@@ -23,11 +23,11 @@ namespace Cinema_Complex
         {
             if (sound)
             {
-                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
             }
             else
             {
-                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
             }
             button1.BackColor = Color.FromArgb(62,151,155);
             button2.BackColor = Color.FromArgb(109,180,100);
@@ -46,12 +46,12 @@ namespace Cinema_Complex
         {
             if (sound)
             {
-                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
                 sound = false;
             }
             else
             {
-                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
                 sound = true;
             }
         }

@@ -142,6 +142,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hall {
+            get {
+                object obj = ResourceManager.GetObject("hall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap movie_info {
             get {
                 object obj = ResourceManager.GetObject("movie_info", resourceCulture);
