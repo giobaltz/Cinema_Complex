@@ -44,6 +44,14 @@ namespace Cinema_Complex
 
         private void Reception_Load(object sender, EventArgs e)
         {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
             pictureBox10.Image = Properties.Resources.movie1;
             pictureBox11.Image = Properties.Resources.movie2;
             pictureBox12.Image = Properties.Resources.movie3;
