@@ -152,6 +152,12 @@
     <Compile Include="Hall.Designer.cs">
       <DependentUpon>Hall.cs</DependentUpon>
     </Compile>
+    <Compile Include="LightController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightController.Designer.cs">
+      <DependentUpon>LightController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Office.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hall.resx">
       <DependentUpon>Hall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightController.resx">
+      <DependentUpon>LightController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Office.resx">
       <DependentUpon>Office.cs</DependentUpon>

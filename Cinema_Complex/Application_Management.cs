@@ -115,5 +115,12 @@ namespace Cinema_Complex
                 player.Play();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LightController lightController = new LightController();
+            this.Close();
+            lightController.Show();
+        }
     }
 }
