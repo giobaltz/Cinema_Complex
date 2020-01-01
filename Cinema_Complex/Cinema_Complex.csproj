@@ -362,5 +362,23 @@
   <ItemGroup>
     <None Include="Resources\hall.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_wc_cgi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_hall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_cinema_lights.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_office.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_reseption2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_cgi_bar.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
