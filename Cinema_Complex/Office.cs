@@ -67,6 +67,9 @@ namespace Cinema_Complex
 
         private void pictureBox3_MouseEnter(object sender, EventArgs e)
         {
+            panel1.BackColor = Color.Blue;
+            panel2.BackColor = Color.Blue;
+            panel3.BackColor = Color.Blue;
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -83,6 +86,13 @@ namespace Cinema_Complex
                 player.Stream = Properties.Resources.Application_management;
                 player.Play();
             }
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            panel1.BackColor =Color.LimeGreen;
+            panel2.BackColor =Color.LimeGreen;
+            panel3.BackColor =Color.LimeGreen;
         }
     }
 }

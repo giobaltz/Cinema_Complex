@@ -15,7 +15,7 @@ namespace Cinema_Complex
 {
     public partial class Reception : Form
     {
-        bool sound;
+        bool sound, color;
         bool sound_door =true;
         int i = 1;
         public Reception(bool sound)
@@ -29,7 +29,7 @@ namespace Cinema_Complex
             pictureBox6.Parent = pictureBox1;
             pictureBox7.Parent = pictureBox1;
             pictureBox8.Parent = pictureBox1;
-            pictureBox9.Parent = pictureBox1;
+            pictureBox9.Parent = pictureBox1; 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox3.BackColor = Color.Transparent;
             pictureBox4.BackColor = Color.Transparent;
@@ -108,50 +108,22 @@ namespace Cinema_Complex
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e)
         {
-            if (sound && sound_door)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Είσοδος;
-                player.Play();
-                timer1.Start();
-                sound_door = false;
-            }
-        }
 
-        private void pictureBox5_MouseEnter(object sender, EventArgs e)
-        {
-            if (sound && sound_door)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Μόνο_προσωπικό;
-                player.Play();
-                timer1.Start();
-                sound_door = false;
-            }
         }
 
         private void pictureBox6_MouseEnter(object sender, EventArgs e)
         {
-            if (sound && sound_door)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Είσοδος;
-                player.Play();
-                timer1.Start();
-                sound_door = false;
-            }
+
+        }
+
+        private void pictureBox5_MouseEnter(object sender, EventArgs e)
+        {
+
         }
 
         private void pictureBox7_MouseEnter(object sender, EventArgs e)
         {
-            if (sound && sound_door)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Μόνο_προσωπικό;
-                player.Play();
-                timer1.Start();
-                sound_door = false;
-            }
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -226,6 +198,21 @@ namespace Cinema_Complex
             }
         }
 
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+            if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
+            {
+                Office office = new Office(sound);
+                this.Close();
+                office.Show();
+            }
+            else
+            {
+                MessageBox.Show("Πληκτρολογήσατε λάθος κωδικό");
+            }
+
+        }
+
         private System.IO.UnmanagedMemoryStream moviesound(int z) {
             int y = i + z;
             if (y == 6)
@@ -280,7 +267,7 @@ namespace Cinema_Complex
 
         private void infobutton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("");
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -295,6 +282,60 @@ namespace Cinema_Complex
             Hall hall = new Hall();
             this.Close();
             hall.Show();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            Hall hall = new Hall();
+            this.Close();
+            hall.Show();
+        }
+
+        public void PaintColor()
+        {
+            if (color) {
+                
+            }
+        }
+
+        private void rightPictureBoxDoor_MouseEnter(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.Blue;
+            panel4.BackColor = Color.Blue;
+            panel6.BackColor = Color.Blue;
+            panel8.BackColor = Color.Blue;
+            panel10.BackColor = Color.Blue;
+            panel12.BackColor = Color.Blue;
+        }
+
+        private void rightPictureBoxDoor_MouseLeave(object sender, EventArgs e)
+        {
+            panel2.BackColor = Color.LimeGreen;
+            panel4.BackColor = Color.LimeGreen;
+            panel6.BackColor = Color.LimeGreen;
+            panel8.BackColor = Color.LimeGreen;
+            panel10.BackColor = Color.LimeGreen;
+            panel12.BackColor = Color.LimeGreen;
+        }
+
+        private void leftPictureBoxDoor_MouseLeave(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.LimeGreen;
+            panel3.BackColor = Color.LimeGreen;
+            panel5.BackColor = Color.LimeGreen;
+            panel7.BackColor = Color.LimeGreen;
+            panel9.BackColor = Color.LimeGreen;
+            panel11.BackColor = Color.LimeGreen;
+        }
+
+        private void leftPictureBoxDoor_MouseEnter(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.Blue;
+            panel3.BackColor = Color.Blue;
+            panel5.BackColor = Color.Blue;
+            panel7.BackColor = Color.Blue;
+            panel9.BackColor = Color.Blue;
+            panel11.BackColor = Color.Blue;
         }
     }
 }
