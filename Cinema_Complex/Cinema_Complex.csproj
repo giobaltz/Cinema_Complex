@@ -177,6 +177,12 @@
     <Compile Include="Reception.Designer.cs">
       <DependentUpon>Reception.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations.Designer.cs">
+      <DependentUpon>Reservations.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Application_Management.resx">
       <DependentUpon>Application_Management.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservations.resx">
+      <DependentUpon>Reservations.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -360,9 +369,6 @@
     <None Include="Resources\εκτέλεση_παραγγελιών.wav" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hall.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dark_wc_cgi.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -379,6 +385,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dark_cgi_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean_room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
