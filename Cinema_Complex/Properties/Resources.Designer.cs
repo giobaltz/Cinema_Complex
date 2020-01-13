@@ -367,6 +367,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap skoupa {
+            get {
+                object obj = ResourceManager.GetObject("skoupa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thought_bubble {
             get {
                 object obj = ResourceManager.GetObject("thought_bubble", resourceCulture);

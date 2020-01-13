@@ -183,6 +183,12 @@
     <Compile Include="Reservations.Designer.cs">
       <DependentUpon>Reservations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Skoupisma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skoupisma.Designer.cs">
+      <DependentUpon>Skoupisma.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Application_Management.resx">
       <DependentUpon>Application_Management.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reservations.resx">
       <DependentUpon>Reservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skoupisma.resx">
+      <DependentUpon>Skoupisma.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -372,9 +381,6 @@
     <None Include="Resources\dark_wc_cgi.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dark_hall.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\dark_cinema_lights.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -391,6 +397,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dark_hall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skoupa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,31 +20,37 @@ namespace Cinema_Complex
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.hall;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.wc_cgi;
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.cinema_lights;
         }
 
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.office;
         }
 
         private void radioButton6_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.cgi_bar;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            pictureBox2.BackColor = Color.Green;
             pictureBox1.Image = Resources.reseption2;
         }
 

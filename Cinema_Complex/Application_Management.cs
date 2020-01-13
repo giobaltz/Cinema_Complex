@@ -129,5 +129,12 @@ namespace Cinema_Complex
             this.Close();
             reservation.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Skoupisma skoupisma = new Skoupisma();
+            this.Close();
+            skoupisma.Show();
+        }
     }
 }
