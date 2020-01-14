@@ -30,8 +30,8 @@
         {
             this.listView1 = new System.Windows.Forms.ListView();
             this.Ονοματεπώνυμο = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Τίτλος = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Αίθουσα = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Τίτλος = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Ώρα = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Θέση = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.infobutton = new System.Windows.Forms.Button();
@@ -48,10 +48,9 @@
             this.Ώρα,
             this.Θέση});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(100, 15);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView1.Location = new System.Drawing.Point(75, 12);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(557, 352);
+            this.listView1.Size = new System.Drawing.Size(419, 287);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -61,15 +60,13 @@
             this.Ονοματεπώνυμο.Text = "Ονοματεπώνυμο";
             this.Ονοματεπώνυμο.Width = 115;
             // 
-            // Τίτλος
-            // 
-            this.Τίτλος.DisplayIndex = 2;
-            this.Τίτλος.Text = "Τίτλος";
-            // 
             // Αίθουσα
             // 
-            this.Αίθουσα.DisplayIndex = 1;
             this.Αίθουσα.Text = "Αίθουσα";
+            // 
+            // Τίτλος
+            // 
+            this.Τίτλος.Text = "Τίτλος";
             // 
             // Ώρα
             // 
@@ -86,10 +83,9 @@
             this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.infobutton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infobutton.ForeColor = System.Drawing.Color.Black;
-            this.infobutton.Location = new System.Drawing.Point(16, 15);
-            this.infobutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.infobutton.Location = new System.Drawing.Point(12, 12);
             this.infobutton.Name = "infobutton";
-            this.infobutton.Size = new System.Drawing.Size(29, 28);
+            this.infobutton.Size = new System.Drawing.Size(22, 23);
             this.infobutton.TabIndex = 13;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
@@ -98,12 +94,11 @@
             // 
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 73);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(4, 59);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 114);
+            this.button1.Size = new System.Drawing.Size(65, 93);
             this.button1.TabIndex = 14;
-            this.button1.Text = "Add";
+            this.button1.Text = "Προσθήκη";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,26 +106,24 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(16, 213);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(4, 173);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 114);
+            this.button2.Size = new System.Drawing.Size(65, 93);
             this.button2.TabIndex = 15;
-            this.button2.Text = "Remove";
+            this.button2.Text = "Αφαίρεση";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Reservations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 383);
+            this.ClientSize = new System.Drawing.Size(506, 311);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.infobutton);
             this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Reservations";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reservations";

@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Cinema_Complex
+{
+    public partial class Orders : Form
+    {
+        string[] row1 = { "Α50", "Coca Cola", "2"};
+        string[] row2 = { "B30", "Chips", "1.50"};
+        string[] row3 = { "C15", "Pop Corn", "3"};
+
+        public Orders()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Η παραγγελία εκτελέστηκε!");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Η παραγγελία ακυρώθηκε!");
+        }
+
+        private void Orders_Load(object sender, EventArgs e)
+        {
+            var listViewItem1 = new ListViewItem(row1);
+            var listViewItem2 = new ListViewItem(row2);
+            var listViewItem3 = new ListViewItem(row3);
+            listView1.Items.Add(listViewItem1);
+            listView1.Items.Add(listViewItem2);
+            listView1.Items.Add(listViewItem3);
+        }
+    }
+}

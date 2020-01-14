@@ -130,11 +130,30 @@ namespace Cinema_Complex
             reservation.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Movies movies = new Movies();
+            this.Close();
+            movies.Show();
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
             Skoupisma skoupisma = new Skoupisma();
             this.Close();
             skoupisma.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Orders orders = new Orders();
+            this.Close();
+            orders.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
