@@ -104,12 +104,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Niagara Solid", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SlateGray;
             this.label3.Location = new System.Drawing.Point(392, 54);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(235, 206);
+            this.label3.Size = new System.Drawing.Size(429, 216);
             this.label3.TabIndex = 9;
             this.label3.Text = "Cinema\r\nComplex";
             // 
@@ -118,7 +118,7 @@
             this.infobutton.BackColor = System.Drawing.Color.Transparent;
             this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.infobutton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infobutton.ForeColor = System.Drawing.Color.Black;
             this.infobutton.Location = new System.Drawing.Point(12, 12);
             this.infobutton.Name = "infobutton";
@@ -207,7 +207,7 @@
             this.button1.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(40, 12);
             this.button1.Name = "button1";

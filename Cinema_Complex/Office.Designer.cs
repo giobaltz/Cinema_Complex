@@ -37,6 +37,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,7 +48,7 @@
             this.infobutton.BackColor = System.Drawing.Color.Transparent;
             this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.infobutton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infobutton.ForeColor = System.Drawing.Color.Black;
             this.infobutton.Location = new System.Drawing.Point(12, 12);
             this.infobutton.Name = "infobutton";
@@ -63,7 +64,7 @@
             this.button1.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(40, 12);
             this.button1.Name = "button1";
@@ -145,11 +146,25 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Έξοδος";
             // 
+            // back
+            // 
+            this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.back.Location = new System.Drawing.Point(12, 87);
+            this.back.Name = "back";
+            this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.back.Size = new System.Drawing.Size(50, 23);
+            this.back.TabIndex = 18;
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Office
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 539);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -184,5 +199,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button back;
     }
 }

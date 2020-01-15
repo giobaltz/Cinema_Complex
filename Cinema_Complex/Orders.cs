@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Cinema_Complex
 {
+    
     public partial class Orders : Form
     {
+        bool sound;
         string[] row1 = { "Α50", "Coca Cola", "2"};
         string[] row2 = { "B30", "Chips", "1.50"};
         string[] row3 = { "C15", "Pop Corn", "3"};
@@ -39,6 +41,13 @@ namespace Cinema_Complex
             listView1.Items.Add(listViewItem1);
             listView1.Items.Add(listViewItem2);
             listView1.Items.Add(listViewItem3);
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Application_Management application_management = new Application_Management(sound);
+            this.Close();
+            application_management.Show();
         }
     }
 }

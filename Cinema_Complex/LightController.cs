@@ -13,6 +13,7 @@ namespace Cinema_Complex
 {
     public partial class LightController : Form
     {
+        bool sound;
         public LightController()
         {
             InitializeComponent();
@@ -134,6 +135,13 @@ namespace Cinema_Complex
                     pictureBox1.Image = Resources.cgi_bar;
                 }
             }
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Application_Management application_management = new Application_Management(sound);
+            this.Close();
+            application_management.Show();
         }
     }
 }

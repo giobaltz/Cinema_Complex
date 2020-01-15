@@ -94,5 +94,12 @@ namespace Cinema_Complex
             panel2.BackColor =Color.LimeGreen;
             panel3.BackColor =Color.LimeGreen;
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Reception reception = new Reception(sound);
+            this.Close();
+            reception.Show();
+        }
     }
 }

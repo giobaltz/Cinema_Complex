@@ -155,5 +155,12 @@ namespace Cinema_Complex
         {
 
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Office office = new Office(sound);
+            this.Close();
+            office.Show();
+        }
     }
 }

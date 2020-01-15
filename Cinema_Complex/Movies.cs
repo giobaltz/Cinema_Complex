@@ -12,6 +12,7 @@ namespace Cinema_Complex
 {
     public partial class Movies : Form
     {
+        bool sound;
         public Movies()
         {
             InitializeComponent();
@@ -62,6 +63,13 @@ namespace Cinema_Complex
         {
             comboBox1.SelectedItem = "A";
             comboBox2.SelectedItem = "17:00-19:00";
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Application_Management application_management = new Application_Management(sound);
+            this.Close();
+            application_management.Show();
         }
     }
 }

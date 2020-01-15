@@ -37,6 +37,7 @@
             this.infobutton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -81,7 +82,7 @@
             this.infobutton.BackColor = System.Drawing.Color.Transparent;
             this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.infobutton.Font = new System.Drawing.Font("Modern No. 20", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infobutton.ForeColor = System.Drawing.Color.Black;
             this.infobutton.Location = new System.Drawing.Point(12, 12);
             this.infobutton.Name = "infobutton";
@@ -94,7 +95,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.ForestGreen;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(4, 59);
+            this.button1.Location = new System.Drawing.Point(4, 98);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(65, 93);
             this.button1.TabIndex = 14;
@@ -106,7 +107,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(4, 173);
+            this.button2.Location = new System.Drawing.Point(4, 206);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(65, 93);
             this.button2.TabIndex = 15;
@@ -114,11 +115,25 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // back
+            // 
+            this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
+            this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.back.Location = new System.Drawing.Point(12, 51);
+            this.back.Name = "back";
+            this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.back.Size = new System.Drawing.Size(50, 23);
+            this.back.TabIndex = 22;
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // Reservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 311);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.infobutton);
@@ -143,5 +158,6 @@
         private System.Windows.Forms.ColumnHeader Αίθουσα;
         private System.Windows.Forms.ColumnHeader Ώρα;
         private System.Windows.Forms.ColumnHeader Θέση;
+        private System.Windows.Forms.Button back;
     }
 }

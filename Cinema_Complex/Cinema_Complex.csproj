@@ -422,5 +422,11 @@
   <ItemGroup>
     <None Include="Resources\skoupa.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wc.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

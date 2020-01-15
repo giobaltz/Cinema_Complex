@@ -12,6 +12,7 @@ namespace Cinema_Complex
 {
     public partial class Skoupisma : Form
     {
+        bool sound;
         public Skoupisma()
         {
             InitializeComponent();
@@ -76,6 +77,13 @@ namespace Cinema_Complex
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Εντοπίστηκαν τα παρακάτω αντικείμενα:\n *Πορτοφόλι στη θέση D-2\n *Κινητό στη θέση F-3\n *Κλειδιά στη θέση F-5");
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Application_Management application_management = new Application_Management(sound);
+            this.Close();
+            application_management.Show();
         }
     }
 }

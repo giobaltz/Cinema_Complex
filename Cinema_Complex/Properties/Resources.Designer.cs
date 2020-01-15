@@ -72,6 +72,16 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_arrow {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap book_info {
             get {
                 object obj = ResourceManager.GetObject("book_info", resourceCulture);
@@ -400,6 +410,16 @@ namespace Cinema_Complex.Properties {
         internal static System.Drawing.Bitmap volume_sound_audio_on {
             get {
                 object obj = ResourceManager.GetObject("volume_sound_audio_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wc {
+            get {
+                object obj = ResourceManager.GetObject("wc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
