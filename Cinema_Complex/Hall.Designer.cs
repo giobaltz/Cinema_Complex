@@ -28,29 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.infobutton = new System.Windows.Forms.Button();
+            this.bar_label = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox_wc = new System.Windows.Forms.PictureBox();
             this.back = new System.Windows.Forms.Button();
-            this.voice_button = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bar_label = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.infobutton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // infobutton
+            // bar_label
             // 
-            this.infobutton.BackColor = System.Drawing.Color.Transparent;
-            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infobutton.ForeColor = System.Drawing.Color.Black;
-            this.infobutton.Location = new System.Drawing.Point(12, 12);
-            this.infobutton.Name = "infobutton";
-            this.infobutton.Size = new System.Drawing.Size(22, 23);
-            this.infobutton.TabIndex = 13;
-            this.infobutton.Text = "i";
-            this.infobutton.UseVisualStyleBackColor = false;
+            this.bar_label.AutoSize = true;
+            this.bar_label.BackColor = System.Drawing.Color.Transparent;
+            this.bar_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bar_label.Font = new System.Drawing.Font("Sitka Heading", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bar_label.Location = new System.Drawing.Point(575, 120);
+            this.bar_label.Name = "bar_label";
+            this.bar_label.Size = new System.Drawing.Size(28, 18);
+            this.bar_label.TabIndex = 22;
+            this.bar_label.Text = "Bar";
+            this.bar_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel1.Location = new System.Drawing.Point(562, 115);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 72);
+            this.panel1.TabIndex = 24;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel2.Location = new System.Drawing.Point(606, 115);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 63);
+            this.panel2.TabIndex = 25;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel3.Location = new System.Drawing.Point(562, 106);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(54, 11);
+            this.panel3.TabIndex = 26;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(572, 115);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 69);
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
             // 
             // pictureBox_wc
             // 
@@ -68,26 +108,12 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 79);
+            this.back.Location = new System.Drawing.Point(12, 41);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.back.Size = new System.Drawing.Size(50, 23);
             this.back.TabIndex = 19;
             this.back.Click += new System.EventHandler(this.back_Click_1);
-            // 
-            // voice_button
-            // 
-            this.voice_button.BackColor = System.Drawing.Color.Transparent;
-            this.voice_button.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
-            this.voice_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.voice_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.voice_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.voice_button.ForeColor = System.Drawing.Color.Black;
-            this.voice_button.Location = new System.Drawing.Point(50, 12);
-            this.voice_button.Name = "voice_button";
-            this.voice_button.Size = new System.Drawing.Size(22, 23);
-            this.voice_button.TabIndex = 15;
-            this.voice_button.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -101,35 +127,56 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // bar_label
+            // button1
             // 
-            this.bar_label.AutoSize = true;
-            this.bar_label.BackColor = System.Drawing.Color.Transparent;
-            this.bar_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bar_label.Font = new System.Drawing.Font("Sitka Heading", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bar_label.Location = new System.Drawing.Point(575, 120);
-            this.bar_label.Name = "bar_label";
-            this.bar_label.Size = new System.Drawing.Size(28, 18);
-            this.bar_label.TabIndex = 22;
-            this.bar_label.Text = "Bar";
-            this.bar_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(40, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 28;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // infobutton
+            // 
+            this.infobutton.BackColor = System.Drawing.Color.Transparent;
+            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.ForeColor = System.Drawing.Color.Black;
+            this.infobutton.Location = new System.Drawing.Point(12, 12);
+            this.infobutton.Name = "infobutton";
+            this.infobutton.Size = new System.Drawing.Size(22, 23);
+            this.infobutton.TabIndex = 27;
+            this.infobutton.Text = "i";
+            this.infobutton.UseVisualStyleBackColor = false;
             // 
             // Hall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 539);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.infobutton);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.bar_label);
             this.Controls.Add(this.pictureBox_wc);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.voice_button);
-            this.Controls.Add(this.infobutton);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Hall";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hall";
+            this.Load += new System.EventHandler(this.Hall_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -140,10 +187,14 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button infobutton;
-        private System.Windows.Forms.Button voice_button;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.PictureBox pictureBox_wc;
         private System.Windows.Forms.Label bar_label;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button infobutton;
     }
 }

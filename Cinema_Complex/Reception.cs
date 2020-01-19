@@ -272,21 +272,21 @@ namespace Cinema_Complex
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Hall hall = new Hall();
+            Hall hall = new Hall(sound);
             this.Close();
             hall.Show();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Hall hall = new Hall();
+            Hall hall = new Hall(sound);
             this.Close();
             hall.Show();
         }
 
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            Hall hall = new Hall();
+            Hall hall = new Hall(sound);
             this.Close();
             hall.Show();
         }

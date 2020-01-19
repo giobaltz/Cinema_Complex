@@ -129,6 +129,7 @@
             this.Controls.Add(this.infobutton);
             this.Controls.Add(this.listView1);
             this.Name = "Orders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Orders";
             this.Load += new System.EventHandler(this.Orders_Load);
             this.ResumeLayout(false);
