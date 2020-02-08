@@ -153,7 +153,9 @@ namespace Cinema_Complex
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Copier copier = new Copier();
+            this.Close();
+            copier.Show();
         }
 
         private void back_Click(object sender, EventArgs e)

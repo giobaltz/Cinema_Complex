@@ -38,9 +38,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.infobutton = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // bar_label
@@ -49,9 +51,10 @@
             this.bar_label.BackColor = System.Drawing.Color.Transparent;
             this.bar_label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.bar_label.Font = new System.Drawing.Font("Sitka Heading", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bar_label.Location = new System.Drawing.Point(575, 120);
+            this.bar_label.Location = new System.Drawing.Point(767, 148);
+            this.bar_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bar_label.Name = "bar_label";
-            this.bar_label.Size = new System.Drawing.Size(28, 18);
+            this.bar_label.Size = new System.Drawing.Size(33, 22);
             this.bar_label.TabIndex = 22;
             this.bar_label.Text = "Bar";
             this.bar_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -59,33 +62,37 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel1.Location = new System.Drawing.Point(562, 115);
+            this.panel1.Location = new System.Drawing.Point(753, 140);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 72);
+            this.panel1.Size = new System.Drawing.Size(5, 89);
             this.panel1.TabIndex = 24;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel2.Location = new System.Drawing.Point(606, 115);
+            this.panel2.Location = new System.Drawing.Point(816, 139);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 63);
+            this.panel2.Size = new System.Drawing.Size(5, 78);
             this.panel2.TabIndex = 25;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel3.Location = new System.Drawing.Point(562, 106);
+            this.panel3.Location = new System.Drawing.Point(753, 136);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(54, 11);
+            this.panel3.Size = new System.Drawing.Size(68, 5);
             this.panel3.TabIndex = 26;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Location = new System.Drawing.Point(572, 115);
+            this.pictureBox2.Location = new System.Drawing.Point(763, 142);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 69);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 85);
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -97,9 +104,10 @@
             this.pictureBox_wc.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_wc.BackgroundImage = global::Cinema_Complex.Properties.Resources.wc;
             this.pictureBox_wc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_wc.Location = new System.Drawing.Point(835, 120);
+            this.pictureBox_wc.Location = new System.Drawing.Point(1113, 148);
+            this.pictureBox_wc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox_wc.Name = "pictureBox_wc";
-            this.pictureBox_wc.Size = new System.Drawing.Size(23, 22);
+            this.pictureBox_wc.Size = new System.Drawing.Size(31, 27);
             this.pictureBox_wc.TabIndex = 21;
             this.pictureBox_wc.TabStop = false;
             // 
@@ -108,10 +116,11 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 41);
+            this.back.Location = new System.Drawing.Point(16, 50);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.back.Size = new System.Drawing.Size(50, 23);
+            this.back.Size = new System.Drawing.Size(67, 28);
             this.back.TabIndex = 19;
             this.back.Click += new System.EventHandler(this.back_Click_1);
             // 
@@ -120,9 +129,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Cinema_Complex.Properties.Resources.hall;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1028, 539);
+            this.pictureBox1.Size = new System.Drawing.Size(1371, 663);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -135,9 +144,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(40, 12);
+            this.button1.Location = new System.Drawing.Point(53, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.Size = new System.Drawing.Size(29, 28);
             this.button1.TabIndex = 28;
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -148,18 +158,31 @@
             this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infobutton.ForeColor = System.Drawing.Color.Black;
-            this.infobutton.Location = new System.Drawing.Point(12, 12);
+            this.infobutton.Location = new System.Drawing.Point(16, 15);
+            this.infobutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.infobutton.Name = "infobutton";
-            this.infobutton.Size = new System.Drawing.Size(22, 23);
+            this.infobutton.Size = new System.Drawing.Size(29, 28);
             this.infobutton.TabIndex = 27;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Location = new System.Drawing.Point(1103, 140);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 93);
+            this.pictureBox3.TabIndex = 29;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // Hall
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 539);
+            this.ClientSize = new System.Drawing.Size(1371, 663);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.infobutton);
@@ -171,7 +194,7 @@
             this.Controls.Add(this.back);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Hall";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hall";
@@ -179,6 +202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_wc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,5 +220,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button infobutton;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

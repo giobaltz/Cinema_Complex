@@ -19,6 +19,8 @@ namespace Cinema_Complex
             this.sound = sound;
             pictureBox2.Parent = pictureBox1;
             pictureBox2.BackColor = Color.Transparent;
+            pictureBox3.Parent = pictureBox1;
+            pictureBox3.BackColor = Color.Transparent;
         }
 
 
@@ -62,6 +64,13 @@ namespace Cinema_Complex
             {
                 button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            WC wC = new WC();
+            this.Close();
+            wC.Show();
         }
     }
 }

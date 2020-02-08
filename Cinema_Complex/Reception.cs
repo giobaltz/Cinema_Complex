@@ -328,6 +328,20 @@ namespace Cinema_Complex
             panel11.BackColor = Color.LimeGreen;
         }
 
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            ReservetionSystem reservetionSystem = new ReservetionSystem();
+            this.Close();
+            reservetionSystem.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ReservetionSystem reservetionSystem = new ReservetionSystem();
+            this.Close();
+            reservetionSystem.Show();
+        }
+
         private void leftPictureBoxDoor_MouseEnter(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Blue;
