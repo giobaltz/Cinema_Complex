@@ -13,13 +13,22 @@ namespace Cinema_Complex
     public partial class Skoupisma : Form
     {
         bool sound;
-        public Skoupisma()
+        public Skoupisma(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
         private void Skoupisma_Load(object sender, EventArgs e)
         {
+            if (sound)
+            {
+                button5.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button5.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
             pictureBox2.Parent = pictureBox1;
             pictureBox2.Location = new Point(650,30);
         }
@@ -84,6 +93,20 @@ namespace Cinema_Complex
             Application_Management application_management = new Application_Management(sound);
             this.Close();
             application_management.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button5.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button5.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
         }
     }
 }

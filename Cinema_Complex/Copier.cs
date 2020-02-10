@@ -12,8 +12,10 @@ namespace Cinema_Complex
 {
     public partial class Copier : Form
     {
-        public Copier()
+        bool sound;
+        public Copier(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
@@ -47,6 +49,18 @@ namespace Cinema_Complex
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Η εκτύπωση ακυρώθηκε");
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Application_Management application_management = new Application_Management(sound);
+            this.Close();
+            application_management.Show();
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

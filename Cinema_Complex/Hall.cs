@@ -23,9 +23,6 @@ namespace Cinema_Complex
             pictureBox3.BackColor = Color.Transparent;
         }
 
-
-
-
         private void back_Click_1(object sender, EventArgs e)
         {
             Reception reception = new Reception(sound);
@@ -45,6 +42,12 @@ namespace Cinema_Complex
             panel1.BackColor = Color.Blue;
             panel2.BackColor = Color.Blue;
             panel3.BackColor = Color.Blue;
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.μπαρ;
+                player.Play();
+            }
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
@@ -68,9 +71,43 @@ namespace Cinema_Complex
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            WC wC = new WC();
+            WC wC = new WC(sound);
             this.Close();
             wC.Show();
+        }
+
+        private void pictureBox3_MouseEnter(object sender, EventArgs e)
+        {
+            panel4.BackColor = Color.Blue;
+            panel5.BackColor = Color.Blue;
+            panel6.BackColor = Color.Blue;
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.μπαρ;
+                player.Play();
+            }
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+            panel4.BackColor = Color.LimeGreen;
+            panel5.BackColor = Color.LimeGreen;
+            panel6.BackColor = Color.LimeGreen;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
         }
     }
 }

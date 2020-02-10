@@ -164,7 +164,7 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 52);
+            this.back.Location = new System.Drawing.Point(12, 41);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.back.Size = new System.Drawing.Size(50, 23);

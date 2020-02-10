@@ -151,6 +151,9 @@
   <data name="coca_cola" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coca-cola.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="coca_cola1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coca-cola.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="dark_cgi_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dark_cgi_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="data" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doritos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doritos.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="doritos_cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doritos cheese.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +229,9 @@
   <data name="popcorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\popcorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pop_corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pop-corn.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="receptionist2_transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receptionist2_transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -253,11 +262,14 @@
   <data name="wc_cgi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wc_cgi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="έλεγχος_εισιτηρίων" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\έλεγχος_εισιτηρίων.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ακύρωση" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ακύρωση.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Είσοδος" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Είσοδος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="εκτέλεση" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\εκτέλεση.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="εκτέλεση_παραγγελιών" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\εκτέλεση_παραγγελιών.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -270,6 +282,12 @@
   </data>
   <data name="Μόνο_προσωπικό" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Μόνο_προσωπικό.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="μπαρ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\μπαρ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Πατατάκια" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Πατατάκια.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Πληροφορίες_κρατήσεων" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Πληροφορίες-κρατήσεων.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -285,5 +303,8 @@
   </data>
   <data name="φωτισμός" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\φωτισμός.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="φωτοτυπικό_μηχάνημα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\φωτοτυπικό μηχάνημα.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

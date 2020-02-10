@@ -17,8 +17,9 @@ namespace Cinema_Complex
         string[] row2 = { "Θάνος Γιαννίκης","Α","Inception","14:00","C-5"};
         string[] row3 = { "Γιώργος Μπαλτζόγλου","D","1917","21:00","E-5"};
         
-        public Reservations()
+        public Reservations(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
@@ -28,7 +29,7 @@ namespace Cinema_Complex
         }
 
         private void Reservations_Load(object sender, EventArgs e)
-        {
+        { 
             var listViewItem1 = new ListViewItem(row1);
             var listViewItem2 = new ListViewItem(row2);
             var listViewItem3 = new ListViewItem(row3);

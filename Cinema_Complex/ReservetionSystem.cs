@@ -12,9 +12,12 @@ namespace Cinema_Complex
 {
     public partial class ReservetionSystem : Form
     {
-        public bool sound;
-        public ReservetionSystem()
+        bool sound;
+        String moviename = null;
+        public ReservetionSystem(bool sound,String moviename)
         {
+            this.sound = sound;
+            this.moviename = moviename;
             InitializeComponent();
         }
 
@@ -304,9 +307,41 @@ namespace Cinema_Complex
 
         private void button28_Click(object sender, EventArgs e)
         {
-            Payment payment = new Payment();
+            Payment payment = new Payment(sound);
             this.Close();
             payment.Show();
+        }
+
+        private void ReservetionSystem_Load(object sender, EventArgs e)
+        {
+            if (moviename!=null) {
+                comboBox1.Text =moviename;
+                if (moviename.Equals("Star Wars: The Rise of Skywalker"))
+                {
+                    pictureBox1.Image = Properties.Resources.movie1;
+                }
+                else if (moviename.Equals("6 Underground"))
+                {
+                    pictureBox1.Image = Properties.Resources.movie2;
+                }
+                else if (moviename.Equals("Cats"))
+                {
+                    pictureBox1.Image = Properties.Resources.movie3;
+                }
+                else if (moviename.Equals("The Irishman"))
+                {
+                    pictureBox1.Image = Properties.Resources.movie4;
+                }
+                else if (moviename.Equals("Ψηλά στον Ουρανό"))
+                {
+                    pictureBox1.Image = Properties.Resources.movie5;
+                }
+            }
+        }
+
+        private void redbuttons_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Αυτές οι θέσεις είναι κρατημένες");
         }
     }
 }

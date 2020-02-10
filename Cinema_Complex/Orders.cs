@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Cinema_Complex
 {
-    
+
     public partial class Orders : Form
     {
         bool sound;
-        string[] row1 = { "Α50", "Coca Cola", "2"};
-        string[] row2 = { "B30", "Chips", "1.50"};
-        string[] row3 = { "C15", "Pop Corn", "3"};
+        string[] row1 = { "Α50", "Coca Cola", "2" };
+        string[] row2 = { "B30", "Chips", "1.50" };
+        string[] row3 = { "C15", "Pop Corn", "3" };
 
-        public Orders()
+        public Orders(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 

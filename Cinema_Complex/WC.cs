@@ -13,8 +13,9 @@ namespace Cinema_Complex
     public partial class WC : Form
     {
         public bool sound;
-        public WC()
+        public WC(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
@@ -23,6 +24,18 @@ namespace Cinema_Complex
             Hall hall = new Hall(sound);
             this.Close();
             hall.Show();
+        }
+
+        private void WC_Load(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
         }
     }
 }

@@ -111,58 +111,56 @@ namespace Cinema_Complex
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.έλεγχος_εισιτηρίων;
+                player.Stream = Properties.Resources.φωτοτυπικό_μηχάνημα;
                 player.Play();
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            LightController lightController = new LightController();
+            LightController lightController = new LightController(sound);
             this.Close();
             lightController.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reservations reservation = new Reservations();
+            Reservations reservation = new Reservations(sound);
             this.Close();
             reservation.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Movies movies = new Movies();
+            Movies movies = new Movies(sound);
             this.Close();
             movies.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Skoupisma skoupisma = new Skoupisma();
+            Skoupisma skoupisma = new Skoupisma(sound);
             this.Close();
             skoupisma.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Orders orders = new Orders();
+            Orders orders = new Orders(sound);
             this.Close();
             orders.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Copier copier = new Copier();
+            Copier copier = new Copier(sound);
             this.Close();
             copier.Show();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            Office office = new Office(sound);
             this.Close();
-            office.Show();
         }
     }
 }

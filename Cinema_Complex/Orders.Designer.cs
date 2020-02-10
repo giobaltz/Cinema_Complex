@@ -36,6 +36,7 @@
             this.Παραγγελία = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Τιμή = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.back = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -110,7 +111,7 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 52);
+            this.back.Location = new System.Drawing.Point(12, 41);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.back.Size = new System.Drawing.Size(50, 23);
@@ -118,11 +119,27 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Enabled = false;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(40, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(22, 23);
+            this.button5.TabIndex = 24;
+            this.button5.UseVisualStyleBackColor = false;
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 311);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.back);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -146,5 +163,6 @@
         private System.Windows.Forms.ColumnHeader Εισιτήριο;
         private System.Windows.Forms.ColumnHeader Τιμή;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button5;
     }
 }

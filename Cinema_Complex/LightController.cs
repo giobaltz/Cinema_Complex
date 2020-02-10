@@ -14,8 +14,9 @@ namespace Cinema_Complex
     public partial class LightController : Form
     {
         bool sound;
-        public LightController()
+        public LightController(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
@@ -142,6 +143,32 @@ namespace Cinema_Complex
             Application_Management application_management = new Application_Management(sound);
             this.Close();
             application_management.Show();
+        }
+
+        private void LightController_Load(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
         }
     }
 }

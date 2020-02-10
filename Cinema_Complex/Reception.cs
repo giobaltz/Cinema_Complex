@@ -15,9 +15,9 @@ namespace Cinema_Complex
 {
     public partial class Reception : Form
     {
-        bool sound, color;
-        bool sound_door =true;
+        bool sound;
         int i = 1;
+        string pix10= "Star Wars: The Rise of Skywalker", pix11= "6 Underground", pix12= "Cats";
         public Reception(bool sound)
         {
             InitializeComponent();
@@ -106,30 +106,9 @@ namespace Cinema_Complex
             }
         }
 
-        private void pictureBox4_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
-            sound_door = true;
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -138,29 +117,44 @@ namespace Cinema_Complex
             {
                 case 1:
                     pictureBox10.Image = Properties.Resources.movie2;
+                    pix10 = "6 Underground";
                     pictureBox11.Image = Properties.Resources.movie3;
+                    pix11 = "Cats";
                     pictureBox12.Image = Properties.Resources.movie4;
+                    pix12 = "The Irishman";
                     break;
 
                 case 2:
                     pictureBox10.Image = Properties.Resources.movie3;
+                    pix10 = "Cats";
                     pictureBox11.Image = Properties.Resources.movie4;
+                    pix11 = "The Irishman";
                     pictureBox12.Image = Properties.Resources.movie5;
+                    pix12 = "Ψηλά στον Ουρανό";
                     break;
                 case 3:
                     pictureBox10.Image = Properties.Resources.movie4;
+                    pix10 = "The Irishman";
                     pictureBox11.Image = Properties.Resources.movie5;
+                    pix11 = "Ψηλά στον Ουρανό";
                     pictureBox12.Image = Properties.Resources.movie1;
+                    pix12 = "Star Wars: The Rise of Skywalker";
                     break;
                 case 4:
                     pictureBox10.Image = Properties.Resources.movie5;
+                    pix10 = "Ψηλά στον Ουρανό";
                     pictureBox11.Image = Properties.Resources.movie1;
+                    pix11 = "Star Wars: The Rise of Skywalker";
                     pictureBox12.Image = Properties.Resources.movie2;
+                    pix12 = "6 Underground";
                     break;
                 default:
                     pictureBox10.Image = Properties.Resources.movie1;
+                    pix10 = "Star Wars: The Rise of Skywalker";
                     pictureBox11.Image = Properties.Resources.movie2;
+                    pix11 = "6 Underground";
                     pictureBox12.Image = Properties.Resources.movie3;
+                    pix12 = "Cats";
                     i = 0;
                     break;
             }
@@ -170,6 +164,10 @@ namespace Cinema_Complex
 
         private void pictureBox10_MouseEnter(object sender, EventArgs e)
         {
+            panel13.BackColor = Color.Blue;
+            panel17.BackColor = Color.Blue;
+            panel16.BackColor = Color.Blue;
+            panel18.BackColor = Color.Blue;
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -180,6 +178,10 @@ namespace Cinema_Complex
 
         private void pictureBox11_MouseEnter(object sender, EventArgs e)
         {
+            panel14.BackColor = Color.Blue;
+            panel15.BackColor = Color.Blue;
+            panel21.BackColor = Color.Blue;
+            panel22.BackColor = Color.Blue;
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -190,27 +192,16 @@ namespace Cinema_Complex
 
         private void pictureBox12_MouseEnter(object sender, EventArgs e)
         {
+            panel19.BackColor = Color.Blue;
+            panel20.BackColor = Color.Blue;
+            panel23.BackColor = Color.Blue;
+            panel24.BackColor = Color.Blue;
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
                 player.Stream = moviesound(2);
                 player.Play();
             }
-        }
-
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-            if (Interaction.InputBox("Πληκτρολογήστε τον ειδικό κωδικό για την είσοδο στο γραφείου του κινηματογράφου", "Έλεγχος εισόδου", "Πληκτρολογήστε εδώ!").Equals("1234"))
-            {
-                Office office = new Office(sound);
-                this.Close();
-                office.Show();
-            }
-            else
-            {
-                MessageBox.Show("Πληκτρολογήσατε λάθος κωδικό");
-            }
-
         }
 
         private System.IO.UnmanagedMemoryStream moviesound(int z) {
@@ -284,20 +275,6 @@ namespace Cinema_Complex
             hall.Show();
         }
 
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-            Hall hall = new Hall(sound);
-            this.Close();
-            hall.Show();
-        }
-
-        public void PaintColor()
-        {
-            if (color) {
-                
-            }
-        }
-
         private void rightPictureBoxDoor_MouseEnter(object sender, EventArgs e)
         {
             panel2.BackColor = Color.Blue;
@@ -306,6 +283,12 @@ namespace Cinema_Complex
             panel8.BackColor = Color.Blue;
             panel10.BackColor = Color.Blue;
             panel12.BackColor = Color.Blue;
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Μόνο_προσωπικό;
+                player.Play();
+            }
         }
 
         private void rightPictureBoxDoor_MouseLeave(object sender, EventArgs e)
@@ -328,18 +311,61 @@ namespace Cinema_Complex
             panel11.BackColor = Color.LimeGreen;
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            ReservetionSystem reservetionSystem = new ReservetionSystem();
+            ReservetionSystem reservetionSystem = new ReservetionSystem(sound,null);
             this.Close();
             reservetionSystem.Show();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
-            ReservetionSystem reservetionSystem = new ReservetionSystem();
+            ReservetionSystem reservetionSystem = new ReservetionSystem(sound,pix10);
             this.Close();
             reservetionSystem.Show();
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            ReservetionSystem reservetionSystem = new ReservetionSystem(sound,pix11);
+            this.Close();
+            reservetionSystem.Show();
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            ReservetionSystem reservetionSystem = new ReservetionSystem(sound,pix12);
+            this.Close();
+            reservetionSystem.Show();
+        }
+
+        private void pictureBox10_MouseLeave(object sender, EventArgs e)
+        {
+            panel13.BackColor = Color.LimeGreen;
+            panel17.BackColor = Color.LimeGreen;
+            panel16.BackColor = Color.LimeGreen;
+            panel18.BackColor = Color.LimeGreen;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_MouseLeave(object sender, EventArgs e)
+        {
+            panel14.BackColor = Color.LimeGreen;
+            panel15.BackColor = Color.LimeGreen;
+            panel21.BackColor = Color.LimeGreen;
+            panel22.BackColor = Color.LimeGreen;
+        }
+
+        private void pictureBox12_MouseLeave(object sender, EventArgs e)
+        {
+            panel19.BackColor = Color.LimeGreen;
+            panel20.BackColor = Color.LimeGreen;
+            panel23.BackColor = Color.LimeGreen;
+            panel24.BackColor = Color.LimeGreen;
         }
 
         private void leftPictureBoxDoor_MouseEnter(object sender, EventArgs e)
@@ -350,6 +376,12 @@ namespace Cinema_Complex
             panel7.BackColor = Color.Blue;
             panel9.BackColor = Color.Blue;
             panel11.BackColor = Color.Blue;
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Είσοδος;
+                player.Play();
+            }
         }
     }
 }

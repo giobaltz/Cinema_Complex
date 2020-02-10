@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -120,7 +121,7 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 51);
+            this.back.Location = new System.Drawing.Point(12, 41);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.back.Size = new System.Drawing.Size(50, 23);
@@ -128,11 +129,27 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Enabled = false;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(40, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(22, 23);
+            this.button7.TabIndex = 23;
+            this.button7.UseVisualStyleBackColor = false;
+            // 
             // Reservations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 311);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.back);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -159,5 +176,6 @@
         private System.Windows.Forms.ColumnHeader Ώρα;
         private System.Windows.Forms.ColumnHeader Θέση;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button7;
     }
 }

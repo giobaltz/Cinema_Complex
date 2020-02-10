@@ -170,6 +170,15 @@ namespace Cinema_Complex.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream coca_cola1 {
+            get {
+                return ResourceManager.GetStream("coca_cola1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap dark_cgi_bar {
@@ -236,6 +245,15 @@ namespace Cinema_Complex.Properties {
             get {
                 object obj = ResourceManager.GetObject("data", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream doritos {
+            get {
+                return ResourceManager.GetStream("doritos", resourceCulture);
             }
         }
         
@@ -395,6 +413,15 @@ namespace Cinema_Complex.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream pop_corn {
+            get {
+                return ResourceManager.GetStream("pop_corn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap popcorn {
@@ -507,6 +534,15 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ακύρωση {
+            get {
+                return ResourceManager.GetStream("ακύρωση", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream Είσοδος {
             get {
                 return ResourceManager.GetStream("Είσοδος", resourceCulture);
@@ -516,18 +552,18 @@ namespace Cinema_Complex.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream εκτέλεση_παραγγελιών {
+        internal static System.IO.UnmanagedMemoryStream εκτέλεση {
             get {
-                return ResourceManager.GetStream("εκτέλεση_παραγγελιών", resourceCulture);
+                return ResourceManager.GetStream("εκτέλεση", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream έλεγχος_εισιτηρίων {
+        internal static System.IO.UnmanagedMemoryStream εκτέλεση_παραγγελιών {
             get {
-                return ResourceManager.GetStream("έλεγχος_εισιτηρίων", resourceCulture);
+                return ResourceManager.GetStream("εκτέλεση_παραγγελιών", resourceCulture);
             }
         }
         
@@ -555,6 +591,24 @@ namespace Cinema_Complex.Properties {
         internal static System.IO.UnmanagedMemoryStream Μόνο_προσωπικό {
             get {
                 return ResourceManager.GetStream("Μόνο_προσωπικό", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream μπαρ {
+            get {
+                return ResourceManager.GetStream("μπαρ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Πατατάκια {
+            get {
+                return ResourceManager.GetStream("Πατατάκια", resourceCulture);
             }
         }
         
@@ -600,6 +654,15 @@ namespace Cinema_Complex.Properties {
         internal static System.IO.UnmanagedMemoryStream φωτισμός {
             get {
                 return ResourceManager.GetStream("φωτισμός", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream φωτοτυπικό_μηχάνημα {
+            get {
+                return ResourceManager.GetStream("φωτοτυπικό_μηχάνημα", resourceCulture);
             }
         }
     }

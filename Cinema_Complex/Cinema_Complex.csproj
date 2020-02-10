@@ -341,25 +341,6 @@
     <None Include="Resources\Πληροφορίες-ταινιών.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="AxWMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
-    <COMReference Include="WMPLib">
-      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Πληροφορίες-κρατήσεων.wav" />
   </ItemGroup>
   <ItemGroup>
@@ -493,6 +474,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\μπαρ.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doritos.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pop-corn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Πατατάκια.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coca-cola.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ακύρωση.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\εκτέλεση.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\φωτοτυπικό μηχάνημα.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

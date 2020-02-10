@@ -39,6 +39,8 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.back = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.infobutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(43, 39);
+            this.label1.Location = new System.Drawing.Point(36, 89);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(248, 24);
@@ -58,8 +60,8 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(47, 89);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(46, 140);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 54);
             this.button1.TabIndex = 2;
@@ -71,8 +73,8 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(100, 185);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(99, 236);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 54);
             this.button2.TabIndex = 3;
@@ -83,8 +85,8 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(47, 285);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(46, 336);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 54);
             this.button3.TabIndex = 4;
@@ -96,8 +98,8 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Blue;
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(100, 382);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(99, 433);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 54);
             this.button4.TabIndex = 5;
@@ -109,7 +111,7 @@
             // 
             this.pictureBox1.Image = global::Cinema_Complex.Properties.Resources.clean_room;
             this.pictureBox1.Location = new System.Drawing.Point(294, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(734, 538);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -121,7 +123,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Cinema_Complex.Properties.Resources.skoupa;
             this.pictureBox2.Location = new System.Drawing.Point(646, 24);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(62, 63);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -141,7 +143,7 @@
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
             this.back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Location = new System.Drawing.Point(12, 41);
             this.back.Name = "back";
             this.back.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.back.Size = new System.Drawing.Size(50, 23);
@@ -149,11 +151,42 @@
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(40, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(22, 23);
+            this.button5.TabIndex = 23;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // infobutton
+            // 
+            this.infobutton.BackColor = System.Drawing.Color.Transparent;
+            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.ForeColor = System.Drawing.Color.Black;
+            this.infobutton.Location = new System.Drawing.Point(12, 12);
+            this.infobutton.Name = "infobutton";
+            this.infobutton.Size = new System.Drawing.Size(22, 23);
+            this.infobutton.TabIndex = 22;
+            this.infobutton.Text = "i";
+            this.infobutton.UseVisualStyleBackColor = false;
+            // 
             // Skoupisma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 539);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.infobutton);
             this.Controls.Add(this.back);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button4);
@@ -163,7 +196,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Skoupisma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Skoupisma";
@@ -187,5 +220,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button infobutton;
     }
 }

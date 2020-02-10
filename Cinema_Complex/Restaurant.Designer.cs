@@ -91,6 +91,7 @@
             this.button6.Text = "Εκτέλεση";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Enter += new System.EventHandler(this.button6_Enter);
             // 
             // button7
             // 
@@ -103,6 +104,7 @@
             this.button7.Text = "Ακύρωση";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Enter += new System.EventHandler(this.button7_Enter);
             // 
             // button5
             // 
@@ -118,6 +120,7 @@
             this.button5.Text = "4 €";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Enter += new System.EventHandler(this.button5_Enter);
             // 
             // button4
             // 
@@ -133,6 +136,7 @@
             this.button4.Text = "3 €";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Enter += new System.EventHandler(this.button4_Enter);
             // 
             // button3
             // 
@@ -148,6 +152,7 @@
             this.button3.Text = "2 €";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Enter += new System.EventHandler(this.button3_Enter);
             // 
             // button2
             // 
@@ -163,6 +168,7 @@
             this.button2.Text = "1.50 €";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Enter += new System.EventHandler(this.button2_Enter);
             // 
             // button1
             // 
@@ -177,6 +183,7 @@
             this.button1.Size = new System.Drawing.Size(22, 23);
             this.button1.TabIndex = 31;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // back
             // 

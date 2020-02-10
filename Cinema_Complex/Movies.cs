@@ -13,8 +13,9 @@ namespace Cinema_Complex
     public partial class Movies : Form
     {
         bool sound;
-        public Movies()
+        public Movies(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 

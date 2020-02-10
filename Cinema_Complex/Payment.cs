@@ -12,8 +12,10 @@ namespace Cinema_Complex
 {
     public partial class Payment : Form
     {
-        public Payment()
+        bool sound;
+        public Payment(bool sound)
         {
+            this.sound = sound;
             InitializeComponent();
         }
 
@@ -24,7 +26,7 @@ namespace Cinema_Complex
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ReservetionSystem reservetionSystem = new ReservetionSystem();
+            ReservetionSystem reservetionSystem = new ReservetionSystem(sound,null);
             this.Close();
             reservetionSystem.Show();
         }
