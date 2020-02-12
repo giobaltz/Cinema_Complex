@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,12 +76,9 @@ namespace Cinema_Complex
 
         private void infobutton_Click(object sender, EventArgs e)
         {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.πληροφορίες_man;
-                player.Play();
-            }
+            String path = Directory.GetCurrentDirectory() + @"\Σύστημα παραγγελιών.pdf";
+            if (File.Exists(path))
+                System.Diagnostics.Process.Start(path);
         }
 
         private void back_MouseEnter(object sender, EventArgs e)
@@ -89,6 +87,16 @@ namespace Cinema_Complex
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
                 player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
+            }
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
                 player.Play();
             }
         }

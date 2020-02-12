@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -112,7 +113,9 @@ namespace Cinema_Complex
 
         private void infobutton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("");
+            String path = Directory.GetCurrentDirectory() + @"\Χώρος Αναμονής.pdf";
+            if (File.Exists(path))
+                System.Diagnostics.Process.Start(path);
         }
 
         private void infobutton_MouseEnter(object sender, EventArgs e)
