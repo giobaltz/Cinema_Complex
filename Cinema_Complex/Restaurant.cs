@@ -33,6 +33,12 @@ namespace Cinema_Complex
 
         private void back_Click(object sender, EventArgs e)
         {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_woman;
+                player.Play();
+            }
             Hall hall = new Hall(sound);
             this.Close();
             hall.Show();
@@ -66,12 +72,7 @@ namespace Cinema_Complex
 
         private void button2_Enter(object sender, EventArgs e)
         {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.Πατατάκια;
-                player.Play();
-            }
+
         }
 
         private void button3_Enter(object sender, EventArgs e)
@@ -84,44 +85,19 @@ namespace Cinema_Complex
             }
         }
 
-        private void button4_Enter(object sender, EventArgs e)
-        {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.pop_corn;
-                player.Play();
-            }
-        }
-
         private void button5_Enter(object sender, EventArgs e)
         {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.doritos;
-                player.Play();
-            }
+
         }
 
         private void button6_Enter(object sender, EventArgs e)
         {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.εκτέλεση;
-                player.Play();
-            }
+
         }
 
         private void button7_Enter(object sender, EventArgs e)
         {
-            if (sound)
-            {
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                player.Stream = Properties.Resources.ακύρωση;
-                player.Play();
-            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -135,6 +111,91 @@ namespace Cinema_Complex
             {
                 button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
                 sound = true;
+            }
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Πατατάκια;
+                player.Play();
+            }
+        }
+
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.coca_cola1;
+                player.Play();
+            }
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.pop_corn;
+                player.Play();
+            }
+        }
+
+        private void button5_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.doritos;
+                player.Play();
+            }
+        }
+
+        private void button6_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.εκτέλεση;
+                player.Play();
+            }
+        }
+
+        private void button7_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.ακύρωση;
+                player.Play();
+            }
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_woman;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_woman;
+                player.Play();
             }
         }
     }

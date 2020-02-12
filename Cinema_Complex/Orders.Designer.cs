@@ -76,6 +76,7 @@
             this.infobutton.TabIndex = 17;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
             // 
             // listView1
             // 
@@ -118,13 +119,13 @@
             this.back.TabIndex = 21;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Enabled = false;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
@@ -133,6 +134,7 @@
             this.button5.Size = new System.Drawing.Size(22, 23);
             this.button5.TabIndex = 24;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Orders
             // 

@@ -167,13 +167,13 @@
             this.back.TabIndex = 22;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Enabled = false;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Black;
@@ -182,6 +182,7 @@
             this.button7.Size = new System.Drawing.Size(22, 23);
             this.button7.TabIndex = 24;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // infobutton
             // 
@@ -196,6 +197,8 @@
             this.infobutton.TabIndex = 23;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.MouseEnter += new System.EventHandler(this.infobutton_MouseEnter);
             // 
             // Movies
             // 

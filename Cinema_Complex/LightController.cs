@@ -64,11 +64,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_reseption2;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.reseption2;
+                    lightsound(true);
                 }
             }
             else if(radioButton2.Checked == true)
@@ -77,11 +79,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_hall;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.hall;
+                    lightsound(true);
                 }
             }
             else if (radioButton3.Checked == true)
@@ -90,11 +94,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_wc_cgi;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.wc_cgi;
+                    lightsound(true);
                 }
             }
             else if (radioButton4.Checked == true)
@@ -103,11 +109,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_cinema_lights;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.cinema_lights;
+                    lightsound(true);
                 }
             }
             else if (radioButton5.Checked == true)
@@ -116,11 +124,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_office;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.office;
+                    lightsound(true);
                 }
             }
             else if (radioButton6.Checked == true)
@@ -129,11 +139,13 @@ namespace Cinema_Complex
                 {
                     pictureBox2.BackColor = Color.Red;
                     pictureBox1.Image = Resources.dark_cgi_bar;
+                    lightsound(false);
                 }
                 else
                 {
                     pictureBox2.BackColor = Color.Green;
                     pictureBox1.Image = Resources.cgi_bar;
+                    lightsound(true);
                 }
             }
         }
@@ -168,6 +180,46 @@ namespace Cinema_Complex
             {
                 button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
                 sound = true;
+            }
+        }
+
+        private void lightsound(bool flag) {
+            if (sound && flag)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.το_φως_άναψε;
+                player.Play();
+            }
+            else if(sound==true && flag==false)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.το_φως_έκλεισε;
+                player.Play();
+            }
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
             }
         }
     }

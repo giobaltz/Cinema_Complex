@@ -60,6 +60,8 @@
             this.infobutton.TabIndex = 30;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.Enter += new System.EventHandler(this.infobutton_Enter);
             // 
             // back
             // 
@@ -72,13 +74,13 @@
             this.back.Size = new System.Drawing.Size(50, 23);
             this.back.TabIndex = 29;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
@@ -87,6 +89,7 @@
             this.button1.Size = new System.Drawing.Size(22, 23);
             this.button1.TabIndex = 31;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // WC
             // 

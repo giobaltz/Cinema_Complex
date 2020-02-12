@@ -350,7 +350,6 @@ namespace Cinema_Complex
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Informations informations = new Informations();
-            this.Close();
             informations.Show();
         }
 
@@ -360,6 +359,16 @@ namespace Cinema_Complex
             panel15.BackColor = Color.LimeGreen;
             panel21.BackColor = Color.LimeGreen;
             panel22.BackColor = Color.LimeGreen;
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_woman;
+                player.Play();
+            }
         }
 
         private void pictureBox12_MouseLeave(object sender, EventArgs e)

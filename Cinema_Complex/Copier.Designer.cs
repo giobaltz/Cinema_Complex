@@ -353,6 +353,8 @@
             this.button5.Size = new System.Drawing.Size(22, 23);
             this.button5.TabIndex = 27;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
             // 
             // back
             // 
@@ -366,6 +368,7 @@
             this.back.TabIndex = 26;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // infobutton
             // 
@@ -400,6 +403,7 @@
             this.Name = "Copier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Copier";
+            this.Load += new System.EventHandler(this.Copier_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

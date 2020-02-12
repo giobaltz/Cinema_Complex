@@ -62,6 +62,14 @@ namespace Cinema_Complex
 
         private void Movies_Load(object sender, EventArgs e)
         {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
             comboBox1.SelectedItem = "A";
             comboBox2.SelectedItem = "17:00-19:00";
         }
@@ -71,6 +79,45 @@ namespace Cinema_Complex
             Application_Management application_management = new Application_Management(sound);
             this.Close();
             application_management.Show();
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
+            }
         }
     }
 }

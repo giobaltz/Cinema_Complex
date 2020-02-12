@@ -43,6 +43,7 @@ namespace Cinema_Complex
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application_Management application_Management = new Application_Management(sound);
+            this.Close();
             application_Management.Show();
         }
 
@@ -62,7 +63,7 @@ namespace Cinema_Complex
 
         private void infobutton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("");
         }
 
         private void pictureBox3_MouseEnter(object sender, EventArgs e)
@@ -80,6 +81,10 @@ namespace Cinema_Complex
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
+            panel4.BackColor = Color.Blue;
+            panel5.BackColor = Color.Blue;
+            panel6.BackColor = Color.Blue;
+            panel7.BackColor = Color.Blue;
             if (sound)
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -100,6 +105,34 @@ namespace Cinema_Complex
             Reception reception = new Reception(sound);
             this.Close();
             reception.Show();
+        }
+
+        private void pictureBox2_MouseLeave(object sender, EventArgs e)
+        {
+            panel4.BackColor = Color.LightGreen;
+            panel5.BackColor = Color.LightGreen;
+            panel6.BackColor = Color.LightGreen;
+            panel7.BackColor = Color.LightGreen;
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
+            }
         }
     }
 }

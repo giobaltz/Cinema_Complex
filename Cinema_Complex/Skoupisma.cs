@@ -108,5 +108,70 @@ namespace Cinema_Complex
                 sound = true;
             }
         }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
+            }
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Έναρξη_Σκουπίσματος;
+                player.Play();
+            }
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Διακοπή_Σκουπίσματος;
+                player.Play();
+            }
+        }
+
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Χαμένα_Αντικείμενα;
+                player.Play();
+            }
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.Χαρτογράφηση_Χώρου;
+                player.Play();
+            }
+        }
     }
 }

@@ -277,8 +277,14 @@
   <data name="wc_cgi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wc_cgi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Έναρξη_Σκουπίσματος" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Έναρξη Σκουπίσματος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ακύρωση" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ακύρωση.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Διακοπή_Σκουπίσματος" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Διακοπή Σκουπίσματος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Είσοδος" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Είσοδος.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -301,8 +307,20 @@
   <data name="μπαρ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\μπαρ.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="πίσω_man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\πίσω_man.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="πίσω_woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\πίσω_woman.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Πατατάκια" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Πατατάκια.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="πληροφορίες_man" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\πληροφορίες_man.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="πληροφορίες_woman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\πληροφορίες_woman.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Πληροφορίες_κρατήσεων" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Πληροφορίες-κρατήσεων.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -316,10 +334,25 @@
   <data name="ταινίες" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ταινίες.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="το_φως_άναψε" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\το φως άναψε.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="το_φως_έκλεισε" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\το φως έκλεισε.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="τουαλέτα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\τουαλέτα.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="φωτισμός" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\φωτισμός.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="φωτοτυπικό_μηχάνημα" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\φωτοτυπικό μηχάνημα.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Χαμένα_Αντικείμενα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Χαμένα Αντικείμενα.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Χαρτογράφηση_Χώρου" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Χαρτογράφηση Χώρου.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

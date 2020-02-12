@@ -68,6 +68,7 @@
             this.button1.Text = "Έναρξη\r\nΣκουπίσματος";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // button2
             // 
@@ -81,6 +82,7 @@
             this.button2.Text = "Διακοπή\r\nΣκουπίσματος";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             // 
             // button3
             // 
@@ -93,6 +95,7 @@
             this.button3.Text = "Χαμένα\r\nΑντικείμενα";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
             // 
             // button4
             // 
@@ -106,6 +109,7 @@
             this.button4.Text = "Χαρτογράφηση\r\nΧώρου";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
             // 
             // pictureBox1
             // 
@@ -150,6 +154,7 @@
             this.back.TabIndex = 21;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // button5
             // 
@@ -179,6 +184,8 @@
             this.infobutton.TabIndex = 22;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.MouseEnter += new System.EventHandler(this.infobutton_MouseEnter);
             // 
             // Skoupisma
             // 

@@ -98,6 +98,8 @@
             this.infobutton.TabIndex = 27;
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.MouseEnter += new System.EventHandler(this.infobutton_MouseEnter);
             // 
             // panel4
             // 
@@ -184,6 +186,7 @@
             this.back.Size = new System.Drawing.Size(50, 23);
             this.back.TabIndex = 19;
             this.back.Click += new System.EventHandler(this.back_Click_1);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
             // 
             // pictureBox1
             // 

@@ -29,7 +29,15 @@ namespace Cinema_Complex
         }
 
         private void Reservations_Load(object sender, EventArgs e)
-        { 
+        {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+            }
             var listViewItem1 = new ListViewItem(row1);
             var listViewItem2 = new ListViewItem(row2);
             var listViewItem3 = new ListViewItem(row3);
@@ -48,6 +56,46 @@ namespace Cinema_Complex
             Application_Management application_management = new Application_Management(sound);
             this.Close();
             application_management.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button7.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
+        }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void infobutton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πληροφορίες_man;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_man;
+                player.Play();
+            }
         }
     }
 }

@@ -526,5 +526,38 @@
   <ItemGroup>
     <None Include="Resources\receptionist1_transparent.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\τουαλέτα.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\το φως άναψε.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\το φως έκλεισε.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Χαμένα Αντικείμενα.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Διακοπή Σκουπίσματος.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Έναρξη Σκουπίσματος.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Χαρτογράφηση Χώρου.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\πληροφορίες_man.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\πίσω_woman.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\πληροφορίες_woman.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\πίσω_man.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

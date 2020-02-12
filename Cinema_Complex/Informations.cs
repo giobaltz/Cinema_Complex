@@ -12,7 +12,6 @@ namespace Cinema_Complex
 {
     public partial class Informations : Form
     {
-        bool sound;
         public Informations()
         {
             InitializeComponent();
@@ -50,9 +49,7 @@ namespace Cinema_Complex
 
         private void button28_Click(object sender, EventArgs e)
         {
-            Reception reception = new Reception(sound);
             this.Close();
-            reception.Show();
         }
 
         private void Informations_Load(object sender, EventArgs e)

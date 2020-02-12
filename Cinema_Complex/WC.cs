@@ -37,5 +37,44 @@ namespace Cinema_Complex
                 button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
             }
         }
+
+        private void infobutton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_off;
+                sound = false;
+            }
+            else
+            {
+                button1.BackgroundImage = Properties.Resources.volume_sound_audio_on;
+                sound = true;
+            }
+        }
+
+        private void infobutton_Enter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_woman;
+                player.Play();
+            }
+        }
+
+        private void back_MouseEnter(object sender, EventArgs e)
+        {
+            if (sound)
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+                player.Stream = Properties.Resources.πίσω_woman;
+                player.Play();
+            }
+        }
     }
 }

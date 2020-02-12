@@ -38,6 +38,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.back = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,6 +61,7 @@
             this.infobutton.Text = "i";
             this.infobutton.UseVisualStyleBackColor = false;
             this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.MouseEnter += new System.EventHandler(this.infobutton_MouseEnter);
             // 
             // button1
             // 
@@ -77,7 +82,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Location = new System.Drawing.Point(363, 205);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(120, 166);
             this.pictureBox3.TabIndex = 2;
@@ -91,7 +96,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::Cinema_Complex.Properties.Resources.data;
             this.pictureBox2.Location = new System.Drawing.Point(514, 210);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(165, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -99,12 +104,13 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             this.pictureBox2.MouseEnter += new System.EventHandler(this.pictureBox2_MouseEnter);
+            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cinema_Complex.Properties.Resources.office;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1029, 543);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,12 +164,49 @@
             this.back.TabIndex = 18;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel4.Location = new System.Drawing.Point(510, 210);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(4, 84);
+            this.panel4.TabIndex = 19;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel5.Location = new System.Drawing.Point(679, 210);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(4, 84);
+            this.panel5.TabIndex = 20;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel6.Location = new System.Drawing.Point(511, 208);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(171, 4);
+            this.panel6.TabIndex = 21;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.LimeGreen;
+            this.panel7.Location = new System.Drawing.Point(511, 294);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(171, 4);
+            this.panel7.TabIndex = 22;
             // 
             // Office
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 539);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.back);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
@@ -175,7 +218,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Office";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Office";
@@ -200,5 +243,9 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
     }
 }

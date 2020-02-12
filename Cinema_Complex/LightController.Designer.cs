@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
+            this.infobutton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -42,8 +44,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.infobutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,6 +68,21 @@
             this.panel1.Size = new System.Drawing.Size(478, 344);
             this.panel1.TabIndex = 0;
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(31, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(22, 23);
+            this.button7.TabIndex = 19;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // back
             // 
             this.back.BackgroundImage = global::Cinema_Complex.Properties.Resources.back_arrow;
@@ -80,6 +95,23 @@
             this.back.TabIndex = 20;
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            this.back.MouseEnter += new System.EventHandler(this.back_MouseEnter);
+            // 
+            // infobutton
+            // 
+            this.infobutton.BackColor = System.Drawing.Color.Transparent;
+            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.infobutton.ForeColor = System.Drawing.Color.Black;
+            this.infobutton.Location = new System.Drawing.Point(3, 3);
+            this.infobutton.Name = "infobutton";
+            this.infobutton.Size = new System.Drawing.Size(22, 23);
+            this.infobutton.TabIndex = 18;
+            this.infobutton.Text = "i";
+            this.infobutton.UseVisualStyleBackColor = false;
+            this.infobutton.Click += new System.EventHandler(this.infobutton_Click);
+            this.infobutton.MouseEnter += new System.EventHandler(this.infobutton_MouseEnter);
             // 
             // label1
             // 
@@ -224,35 +256,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = global::Cinema_Complex.Properties.Resources.volume_sound_audio_off;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(31, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(22, 23);
-            this.button7.TabIndex = 19;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // infobutton
-            // 
-            this.infobutton.BackColor = System.Drawing.Color.Transparent;
-            this.infobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.infobutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.infobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.infobutton.ForeColor = System.Drawing.Color.Black;
-            this.infobutton.Location = new System.Drawing.Point(3, 3);
-            this.infobutton.Name = "infobutton";
-            this.infobutton.Size = new System.Drawing.Size(22, 23);
-            this.infobutton.TabIndex = 18;
-            this.infobutton.Text = "i";
-            this.infobutton.UseVisualStyleBackColor = false;
             // 
             // LightController
             // 
