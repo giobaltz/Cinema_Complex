@@ -349,7 +349,9 @@ namespace Cinema_Complex
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            Informations informations = new Informations();
+            this.Close();
+            informations.Show();
         }
 
         private void pictureBox11_MouseLeave(object sender, EventArgs e)

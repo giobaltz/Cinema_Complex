@@ -278,6 +278,85 @@ namespace Cinema_Complex.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Η Lucasfilm και ο J.J.Abrams που επιστρέφει στη σκηνοθεσία, ενώνουν για μια ακόμη φορά τις δυνάμεις τους για ένα επικό ταξίδι σε έναν γαλαξία πολύ, πολύ μακριά.
+        ///Η ιστορία μιας ολόκληρης γενιάς φτάνει στο τέλος της.
+        ///
+        ///Πρωτότυπος τίτλος:	Star Wars: The Rise of Skywalker
+        ///Έναρξη ταινίας:	18.12.2019
+        ///Διάρκεια:	142 Λεπτά
+        ///Χώρα Παραγωγής/Έτος:	USA/2019
+        ///Είδος:	Περιπέτεια, Δράσης
+        ///Ηθοποιοί:	Daisy Ridley, Adam Driver, Mark Hamill, John Boyega, Oscar Isaac
+        ///Σκηνοθέτης:	J.J. Abrams
+        ///Διανομή:	Feelgood Entertainment        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InformationMovie1 {
+            get {
+                return ResourceManager.GetString("InformationMovie1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Θορυβώδες και αποφασισμενο να εντυπωσιάσει με κάθε τρόπο το νέο φιλμ του Μάικλ Μπέι είναι θεαματικό και γεμάτο δράση αλλά απόλυτα σχηματικό και πολύ γρήγορα εξαιρετικά βαρετό. Τόσο που ακόμη και τα αστεία του Ράιαν Ρέινολντς πέφτουν στο κενό.
+        ///
+        ///Παραγωγή: Μάικλ Μπέι, Ιαν Μπράις, Ντειβιντ Ελισον, Ντέινα Γκόλντμπεργκ, Ντον Γκρείντζερ
+        ///Σκηνοθεσία: Μάικλ Μπέι
+        ///Σενάριο: Πολ Βέρνικ, Ρετ Ρις
+        ///Φωτογραφία: Μπογιάν Μπαζέλι
+        ///Μοντάζ: Ρότζερ Μπάρτον, Γουίλιαμ Γκόλντεμπεργκ, Κάλβιν Γουίμερ
+        ///Μουσική: Λορν Μπάλφε
+        ///Πρωταγων [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InformationMovie2 {
+            get {
+                return ResourceManager.GetString("InformationMovie2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ο βραβευμένος με Όσκαρ Τομ Χούπερ (Ο Λόγος του Βασιλιά, Οι Άθλιοι, Το Κορίτσι από τη Δανία) μεταμορφώνει το λατρεμένο, πολυβραβευμένο μιούζικαλ του Άντριου Λόιντ Γουέμπερ σε ένα κορυφαίο κινηματογραφικό γεγονός.
+        ///
+        ///Πρωτότυπος τίτλος:	Cats
+        ///Έναρξη ταινίας:	23.01.2020
+        ///Διάρκεια:	110 Λεπτά
+        ///Χώρα Παραγωγής/Έτος:	USA, GBR/2019
+        ///Είδος:	Μιούζικαλ
+        ///Ηθοποιοί:	James Corden, Dame Judi Dench, Jason Derulo, Idris Elba, Jennifer Hudson
+        ///Σκηνοθέτης:	Tom Hooper
+        ///Διανομή:	Tulip Entertainment
+        ///Καταλληλότητα:	ΚΑΤΑΛΛΗΛΗ.
+        /// </summary>
+        internal static string InformationMovie3 {
+            get {
+                return ResourceManager.GetString("InformationMovie3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Οι Ρόμπερτ Ντε Νίρο, Αλ Πατσίνο και Τζο Πέσι πρωταγωνιστούν στην ταινία &quot;Ο ΙΡΛΑΝΔΟΣ&quot; του Μάρτιν Σκορσέζε, μια επική ιστορία για το οργανωμένο έγκλημα στη μεταπολεμική Αμερική, όπως την αφηγείται ο βετεράνος του Β &apos;Παγκοσμίου Πολέμου Φρανκ Σίραν, απατεώνας και εγκληματίας ο οποίος συνεργάστηκε με μερικές από τις πιο διαβόητες προσωπικότητες του 20ού αιώνα. Η ταινία εξιστορεί ένα από τα μεγαλύτερα άλυτα μυστήρια της αμερικανικής ιστορίας για δεκαετίες, την εξαφάνιση του θρυλικού προέδρου της Ένωσης Τζίμι Χόφα [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string InformationMovie4 {
+            get {
+                return ResourceManager.GetString("InformationMovie4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Αντάξια της προϊστορίας της, η Pixar υπογράφει ακόμη ένα διασκεδαστικό ταξίδι στην κινηματογραφική μαγεία. Ευρηματικό όσο και συγκινητικό, συνδυάζει την παιδική ευαισθησία με χιούμορ που απευθύνεται σε ενήλικους. Όσκαρ, Χρυσή Σφαίρα και BAFTA καλύτερου animation και μουσικής επένδυσης.
+        ///
+        ///Είδος: Animation
+        ///Έτος παραγωγής:	2009
+        ///Σκηνοθεσία:	Bob Peterson, Pete Docter
+        ///Σενάριο: Bob Peterson, Pete Docter
+        ///Ηθοποιοί: Edward Asner, John Ratzenberger, Jordan Nagai.
+        /// </summary>
+        internal static string InformationMovie5 {
+            get {
+                return ResourceManager.GetString("InformationMovie5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap mastercard {

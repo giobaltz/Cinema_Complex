@@ -158,6 +158,12 @@
     <Compile Include="Hall.Designer.cs">
       <DependentUpon>Hall.cs</DependentUpon>
     </Compile>
+    <Compile Include="Informations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informations.Designer.cs">
+      <DependentUpon>Informations.cs</DependentUpon>
+    </Compile>
     <Compile Include="LightController.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     <EmbeddedResource Include="Hall.resx">
       <DependentUpon>Hall.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Informations.resx">
+      <DependentUpon>Informations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LightController.resx">
       <DependentUpon>LightController.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,9 +318,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\receptionist_transparent.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\receptionist2_transparent.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thought_bubble.png" />
@@ -498,6 +504,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\φωτοτυπικό μηχάνημα.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationMovie1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationMovie2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationMovie3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationMovie4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationMovie5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist2_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receptionist1_transparent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
